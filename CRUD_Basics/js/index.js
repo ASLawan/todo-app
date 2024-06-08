@@ -45,9 +45,15 @@ let createPost = () => {
         <p>${data.text}</p>
         <span class="options">
             <i class="fa-solid fa-pencil"></i>
-            <i class="fa-solid fa-trash-can-arrow-up"></i>
+            <i onclick="deletePost(this)" class="fa-solid fa-trash-can-arrow-up"></i>
         </span>
     </div>
     `
     input.value = "";
 }
+
+// delete post
+
+let deletePost = (post) => {
+    post.parentElement.parentElement.remove();
+};
