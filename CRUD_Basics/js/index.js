@@ -19,7 +19,7 @@ let formValidation = () => {
         console.log("Failure");
     } else {
 
-        msg.innerHTML = "Post successfully created!";
+        msg.innerHTML = "";
         console.log("Success");
         acceptData();
     }
@@ -44,7 +44,7 @@ let createPost = () => {
     <div>
         <p>${data.text}</p>
         <span class="options">
-            <i class="fa-solid fa-pencil"></i>
+            <i onclick="editPost(this)" class="fa-solid fa-pencil"></i>
             <i onclick="deletePost(this)" class="fa-solid fa-trash-can-arrow-up"></i>
         </span>
     </div>
@@ -57,3 +57,10 @@ let createPost = () => {
 let deletePost = (post) => {
     post.parentElement.parentElement.remove();
 };
+
+// edit post
+
+let editPost = (post) => {
+    input.value = post.parentElement.previousElementSibling.innerHTML;
+    post.parentElement.parentElement.remove();
+}
