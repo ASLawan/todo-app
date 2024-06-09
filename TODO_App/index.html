@@ -40,7 +40,7 @@
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-small btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-small btn-outline-primary">Add</button>
+                <button type="submit" id="add" class="btn btn-small btn-outline-primary">Add</button>
                 </div>
             </div>
         </div>
@@ -48,13 +48,13 @@
         <h5 class="my-2">Tasks</h5>
         <!-- task card -->
          <div class="tasks" id="tasks">
-            <div class="task">
+            <!-- <div class="task">
                 <span class="fw-bold">Task One Title</span>
                 <span class="small text-secondary">Task Date</span>
                 <p>Task to be done</p>
                 <span class="options mb-2">
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-trash-can-arrow-up"></i>
+                    <i onclick="editTask(this)" data-bs-toggle="modal" data-bs-target="form" class="fa-solid fa-pencil"></i>
+                    <i onclick="deleteTask(this)" class="fa-solid fa-trash-can-arrow-up"></i>
                 </span>
             </div>
             <div class="task">
@@ -62,10 +62,10 @@
                 <span class="small text-secondary">Task Date</span>
                 <p>Task to be done</p>
                 <span class="options mb-2">
-                    <i class="fa-solid fa-pencil"></i>
-                    <i class="fa-solid fa-trash-can-arrow-up"></i>
+                    <i onclick="editTask(this)" data-bs-toggle="modal" data-bs-target="form" class="fa-solid fa-pencil"></i>
+                    <i onclick="deleteTask(this)" class="fa-solid fa-trash-can-arrow-up"></i>
                 </span>
-            </div>
+            </div> -->
          </div>
     </div>
 </body>
