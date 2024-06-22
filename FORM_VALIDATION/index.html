@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form id="id">
+            <div class="title">
+                Get Started
+            </div>
+            <!-- username -->
+            <div>
+                <label for="username">Username:</label>
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Sewoyebaa">
+                <i class="fas fa-exclamation-circle fail_icon"></i>
+                <i class="fas fa-check-circle success_icon"></i>
+                <div class="error">
+
+                </div>
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email">Email:</label>
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="e.g: austin@yahoo.com">
+                <i class="fas fa-exclamation-circle fail_icon"></i>
+                <i class="fas fa-check-circle success_icon"></i>
+                <div class="error">
+
+                </div>
+            </div>
+
+            <!-- password -->
+            <div>
+                <label for="password">Password:</label>
+                <i class="fas fa-lock"></i>
+                <input type="text" name="password" id="password" placeholder="Password here">
+                <i class="fas fa-exclamation-circle fail_icon"></i>
+                <i class="fas fa-check-circle success_icon"></i>
+                <div class="error">
+
+                </div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/31ec17ea4d.js" crossorigin="anonymous"></script>
+</html>
