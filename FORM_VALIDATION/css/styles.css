@@ -12,10 +12,49 @@ body {
 
 .container {
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
 }
+
+/* CONTENT */
+
+.content {
+    background-color: #f2796e;
+    width: 55%;
+    text-align: center;
+    min-height: 100vh;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo {
+    text-align: left;
+}
+
+.img {
+    background-image: url("../imgs/illustration.svg");
+    /* border: 2px solid #000; */
+    height: 65%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* FORM SECTION */
 form {
-    max-width: 400px;
+    /* max-width: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 50px;
     margin: 0 auto;
