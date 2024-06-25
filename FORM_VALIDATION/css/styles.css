@@ -176,3 +176,25 @@ button:hover {
 }
 
 /* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .img {
+        height: 70vh;
+    }
+}
