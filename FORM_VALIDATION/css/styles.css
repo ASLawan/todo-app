@@ -25,6 +25,7 @@ form {
     font-size: 25px;
     font-weight: bolder;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 form > div > input {
@@ -47,6 +48,46 @@ form > div {
 
 input:focus {
     border: 2px solid #f2796e;
+}
+
+/* SOCIAL */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.btn1, 
+.btn2 {
+    padding: 8px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: #039be5;
+    color: #fff;
+}
+.or {
+    text-align: center;
+    font-weight: bolder;
+}
+.question {
+    font-size: 15px;
+    text-align: center;
+}
+span {
+    color: #f2796e;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 /* FORM ICONS */
